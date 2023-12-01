@@ -1,0 +1,38 @@
+@import url(https://fonts.google.com/specimen/Croissant+One?subset=latin&noto.script=Latn);
+*, *:after, *:before { /* для всех эл-тов */
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    transition: .5s ease-in-out;
+    /* добавим плавность переходов для всех элементов страницы*/
+ }
+ ul{
+    list-style: none;
+ }
+a{
+    text-decoration: none; 
+    outline: none; /* убирает контур, когда эл-т в фокусе */
+}
+img{
+    width: 100%; 
+    display: block;
+}
+h1, h2, h3{
+    font-family: 'Croissant One', cursive;
+}
+body{
+    font-family: 'Open Sans', arial, sans-serif;
+    font-size: 14px;
+    line-height: 1;
+    color:rgb(22, 22, 22); 
+    background-color: bisque;
+
+}
+.container{
+    display: flex;
+    margin: auto;
+    height: auto;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 15px;
+}

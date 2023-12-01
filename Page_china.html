@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title> Пупа </title>
+        <link rel="stylesheet" href="base.css">
+        <link rel="stylesheet" href="header.css">
+        <link rel="stylesheet" href="Page_yoga.css">
+        <link rel="stylesheet" href="footer.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+        <link rel="icon" href="images/4.ico" sizes = "any">
+        <script src="https://kit.fontawesome.com/fd9c503804.js" crossorigin="anonymous"></script>
+    </head>
+
+    <header>
+        <nav class = "container"> 
+            <a class="logo" href="">
+                <span>L</span>
+                <span>U</span>
+                <span>N</span>
+                <span>A</span>
+            </a>
+
+            <div class="nav-toggle"><span></span></div> <!-- кнопка показа, скрытия менюшки -->
+
+            <ul id = "menu">             
+                <li><a href = "Page_main.html">Главная </a></li>
+                <li><a href = "link 2"> О йогах  </a></li>
+                <li><a href = "link 3"> Видео</a></li>
+            </ul>
+
+            <form action="" method="get" id="searchform">
+                <input type="text" placeholder="Искать на сайте...">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </nav>
+    </header>
+
+    <body>
+
+        <div class = "container" > 
+            <div class = "main-title"> 
+                <h1 > Китайская медитация</h1>
+                <img src="images/title_img.png"> 
+                <p>Китайские практики направлены на достижение гармонии тела и духа. В основном они работают с жизненной энергией (генерируют, трансформируют, перенаправляют ее). В их основе – китайская традиционная философия.</p>
+                
+            </div>
+        </div>
+
+        <div class = "container">
+            <div class = "posts-list">
+                <aticle id = "post-1" class = "post"> 
+                    <div class = "post-image"><a href=""><img src= "images/Китайская_фотка.jpg"></a></div>
+                    <div class = "post-content"> 
+                        <h2 class="post-title">Даосская медитация</h2>
+                        <p>Медитацию в даосизме часто называют «цзо ван», что значит ‘сидение в забвении’. Забвение в данном случае подразумевает невовлечённость в восприятие внешних объектов мира в процессе практики. Это то, что в йоге принято соотносить со стадией «пратьяхара» в медитации, когда медитативное сосредоточение сопровождается абстрагированием от ощущений органов чувств: зрения, слуха, обоняния и т. д. То есть происходит полный разворот внимания внутрь. Так, описание этого явления общее для «Йога-сутр» Патанджали и даосских трактатов.</p>
+                        <h3> Выделяют три разновидности: </h3>
+                        <ul> 
+                            <li> <p> прозрение – достижение состояния внутренней пустоты и абсолютной тишины; </p></li>
+                            <li> <p> концентрация – сосредоточение на дыхании; </p></li>
+                            <li> <p> визуализация – обращение внутреннего взора внутрь себя.</p></li>
+                        </ul>
+                        <p> Для самостоятельной практики можно попробовать помедитировать на пустоту. </p>
+                        <div class = "post-image"><a href=""><img src= "images/Китайская_фотка_2.jpg"></a></div>
+                        
+                        <h3> Как заняться Даосскими медитациями:</h3>
+                        <ul> 
+                            <li> <p> Устройтесь удобно.</p></li>
+                            <li> <p> Взгляд направьте на кончик носа.</p></li>
+                            <li> <p> Мысли и ощущения пропускайте мимо себя, не следуйте за ними.</p></li>
+                            <li> <p> Продолжайте до тех пор, пока не достигнете ощущения полной пустоты.</p></li>
+                        </ul>
+                    </div>
+                </aticle>
+            </div> <!-- конец div class="posts-list"-->
+
+        </div> <!-- конец div class="container"-->
+
+        <div class = "container"> 
+            <div class = "literature">
+                <a href = "#"> <h2> Рекомендуем ознакомиться с литературой </h2> </a>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="about">
+                    <h2>О сайте</h2>
+                    <p>ля-ля~</p>
+                </div>
+
+                <div class="author">
+                    <h2>О разработчике </h2>
+                    <p> Шурша Ира ИКБО-36-22 </p>
+                </div>
+            </div>
+        </footer>
+
+
+        <script>
+            $('.nav-toggle').on('click', function(){
+            $('#menu').toggleClass('active');
+            });
+        </script>
+    </body>
+</html>

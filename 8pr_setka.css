@@ -1,0 +1,187 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Создаем 3 колонки с равной шириной */
+    gap: 8px; /* Расстояние между элементами */
+    padding: 8px; /* Отступы вокруг контейнера */
+    height: 95vh;
+    background: #d9e0ea;
+}
+
+.grid > div {
+    position: relative; /* Позволяет позиционировать дополнительные элементы внутри каждого блока */
+    background: #f0f0f0; /* Цвет фона блока */
+    padding: 20px; /* Отступы внутри блока */
+    text-align: center; /* Выравнивание текста по центру */
+    overflow: hidden;
+    transition: transform 0.3s; /* Добавляем плавную анимацию для свойства transform */
+    transform: scale(1);
+}
+
+/* Стили для спанов и дополнительных элементов внутри блоков */
+.grid span {
+    display: block; /* Размещаем текст на новой строке */
+    font-size: 1.2rem; /* Размер шрифта */
+    font-weight: bold; /* Жирный шрифт */
+    color: #4d0404;
+    opacity: 0;
+}
+.grid div:hover span{
+    opacity: 1;
+}
+
+
+
+/* Дополнительный элемент для создания overlay-эффекта */
+.grid .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3); /* Полупрозрачный черный фон */
+    opacity: 0; /* Начальная непрозрачность */
+    transition: opacity 0.3s; /* Плавное изменение непрозрачности при наведении */
+}
+
+.grid > div:hover .overlay {
+    opacity: 1; /* При наведении делаем overlay полупрозрачным */
+}
+
+.grid > div:hover {
+    transform: scale(1.03); /* Увеличиваем элемент при наведении */
+    z-index: 2;
+}
+
+/* Стили для спанов и дополнительных элементов внутри блоков */
+.grid span {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #461423;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.grid > div:hover span {
+    opacity: 1;
+}
+
+/* Дополнительный элемент для создания overlay-эффекта */
+.grid .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.grid > div:hover .overlay {
+    opacity: 1;
+}
+
+
+
+
+
+
+.grid > div:nth-of-type(1) {
+    background-image: url("cat1.jpg");
+    background-size: cover;
+    background-position: center;
+    grid-column: 1/3;
+    overflow: hidden;
+}
+div>span{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.grid > div:nth-of-type(2) {
+    background-image: url("cat2.jpg");
+    background-size: cover;
+    background-position: center;
+    grid-column: 3/5;
+    grid-row: 1/3;
+    overflow: hidden;
+}
+.grid > div:nth-of-type(3) {
+    background-image: url("cat3.jpg");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+.grid > div:nth-of-type(4) {
+    background-image: url("cat4.jpg");
+    background-size: cover;
+    background-position: center;
+    grid-column: 2/3;
+    grid-row: 2/5;
+    overflow: hidden;
+}
+.grid > div:nth-of-type(5) {
+    background-image: url("cat5.jpg");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+.grid > div:nth-of-type(6) {
+    background-image: url("cat6.jpg");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+.grid > div:nth-of-type(7) {
+    background-image: url("cat7.jpg");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+.grid > div:nth-of-type(8) {
+    background-image: url("cat8.jpg");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+.grid > div:nth-of-type(9) {
+    background-image: url("cat9.jpg");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+.grid > div:nth-of-type(10) {
+    background-image: url("cat10.jpg");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+
+@media screen and (max-width: 840px) {
+    .grid {
+        height: auto;
+        grid-template-columns: repeat(2, 1fr);
+
+        & div {
+            min-height: auto;
+            aspect-ratio: 1 / 1;
+            width: 100%;
+        }
+
+        & > div:nth-of-type(1) {
+            grid-column: auto;
+        }
+
+        & > div:nth-of-type(2) {
+            grid-column: auto;
+            grid-row: auto;
+        }
+
+        & > div:nth-of-type(4) {
+            grid-column: auto;
+            grid-row: auto;
+        }
+    }
+}

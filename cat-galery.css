@@ -1,0 +1,10 @@
+.galery{ 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+} 
+.cat-photo{ 
+    height: 300px;
+    width: 300px;
+    padding: 0 10px;
+}

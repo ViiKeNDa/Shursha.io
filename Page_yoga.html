@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title> Пупа </title>
+        <link rel="stylesheet" href="base.css">
+        <link rel="stylesheet" href="header.css">
+        <link rel="stylesheet" href="Page_yoga.css">
+        <link rel="stylesheet" href="footer.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+        <link rel="icon" href="images/4.ico" sizes = "any">
+        <script src="https://kit.fontawesome.com/fd9c503804.js" crossorigin="anonymous"></script>
+    </head>
+
+    <header>
+        <nav class = "container"> 
+            <a class="logo" href="">
+                <span>L</span>
+                <span>U</span>
+                <span>N</span>
+                <span>A</span>
+            </a>
+
+            <div class="nav-toggle"><span></span></div> <!-- кнопка показа, скрытия менюшки -->
+
+            <ul id = "menu">             
+                <li><a href = "Page_main.html">Главная </a></li>
+                <li><a href = "link 2"> О йогах  </a></li>
+                <li><a href = "link 3"> Видео</a></li>
+            </ul>
+
+            <form action="" method="get" id="searchform">
+                <input type="text" placeholder="Искать на сайте...">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </nav>
+    </header>
+
+    <body>
+
+        <div class = "container" > 
+            <div class = "main-title"> 
+                <h1 > Йогическая медитация</h1>
+                <img src="images/title_img.png"> 
+                <p>Все йогические медитации направлены на гармоничное сочетание физического тела, души и сознания. Учитывая большое разнообразие используемых тут техник, каждый человек легко сможет подобрать оптимальную для себя медитацию.</p>
+                
+            </div>
+        </div>
+
+        <div class = "container">
+            <div class = "posts-list">
+                <aticle id = "post-1" class = "post"> 
+                    <div class = "post-image"><a href=""><img src= "images/йогическая_фотка.jpg"></a></div>
+                    <div class = "post-content"> 
+                        <h2 class="post-title">Раскрытие чакр</h2>
+                        <p>Чакра – это приемник космической энергии. Если она настроена неправильно, то и функционировать гармонично не сможет. Известно семь основных чакр. Они располагаются вдоль позвоночника. Именно поэтому почти все медитации начинаются с выравнивания спины – в таком положении энергия течет беспрепятственно.</p>
+                        <p>У каждой чакры есть свой цвет и звук. Их нужно запомнить. Это очень поможет визуализировать чакру, четче прочувствовать ее.</p>
+                        <p>Раскрытие чакры предполагает осознанную работу с ней. Это позволяет настроиться на более высокие вибрации и гармонизировать таким образом связанные с этой чакрой сферы жизни.</p>
+                        <h3> Как заниматься медитацией на раскрытие чакр: </h3>
+                        <ul> 
+                            <li> <p> Примите комфортное положение, лучше всего – позу лотоса. </p></li>
+                            <li> <p> Закройте глаза. Ощутите расслабление. </p></li>
+                            <li> <p> Успокойте ум, дышите ровно. Отстройтесь от внешней суеты.</p></li>
+                            <li> <p> Добавьте долгий звук «лам», растягивая его на весь выдох.</p></li>
+                            <li> <p> Вместо звука чакры можно произносить мантру, которая будет способствовать раскрытию муладхары – бам бхам мам йам рам лам.</p></li>
+                            <li> <p> Представляйте потоки космической энергии, свободно проходящие через чакру.</p></li>
+                            <li> <p> Повторяйте до тех пор, пока не добьетесь четкой визуализации.</p></li>
+                            <li> <p> Можно на этом и остановиться, а можно перейти к следующей чакре и продолжить работу аналогичным образом.</p></li>
+                        </ul>
+                    </div>
+                </aticle>
+            </div> <!-- конец div class="posts-list"-->
+
+        </div> <!-- конец div class="container"-->
+
+        <div class = "container"> 
+            <div class = "literature">
+                <a href = "#"> <h2> Рекомендуем ознакомиться с литературой </h2> </a>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="about">
+                    <h2>О сайте</h2>
+                    <p>ля-ля~</p>
+                </div>
+
+                <div class="author">
+                    <h2>О разработчике </h2>
+                    <p> Шурша Ира ИКБО-36-22 </p>
+                </div>
+            </div>
+        </footer>
+
+
+        <script>
+            $('.nav-toggle').on('click', function(){
+            $('#menu').toggleClass('active');
+            });
+        </script>
+    </body>
+</html>

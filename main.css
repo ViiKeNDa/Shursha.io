@@ -1,0 +1,232 @@
+/* Содержание */
+.content_of_page .btn {
+   margin-top: 30px;
+   text-decoration: none;
+   text-align: center;
+   width: 200px;
+   padding: 10px 0;
+   border: solid 1px #fda93a;
+   border-radius: 4px;
+   font: 16px Arial, Helvetica, sans-serif;
+   font-weight: bold;
+   color: #EF5A42;
+   background-color: #F8B763;
+   background-image: linear-gradient(top, #F8B763 0%, #F8B763 100%);
+   box-shadow: 0px 0px 2px #ffcdcd, inset 0px 0px 1px #ffffff;
+   outline: none;
+ }
+ 
+ .content_of_page .content {
+   width: 250px;
+   margin-top: 10px;
+   padding: 20px;
+   border: solid 1px rgb(214, 218, 219);
+   border-radius: 4px;
+   font-family: Calibri, "Trebuchet MS", sans-serif;
+ }
+.content_of_page .hidden{ 
+   display: none;
+}
+.content_of_page a{ 
+   font-size: 18px;
+}
+
+.main-title{ 
+   margin-top: 100px;
+   background-color:#F8B763;
+   max-width: 50%;
+   height: 300px;
+   padding: 10px;
+   border-radius: 15px;
+}
+.main-title h1{ 
+   text-align: center;
+   text-transform: uppercase;
+   margin-top: 10px;
+   margin-bottom: 20px;
+}
+.main-title p{
+   margin-top: 50px;
+   font-size: 16px;
+   font-family: 'Croissant One', cursive;
+}
+.main-title img{ 
+   max-width: 200px; 
+   max-height: 200px; 
+   float: right;
+
+}
+.container{
+   display: flex; 
+   flex-wrap: wrap;
+   justify-content: center ;
+}
+.posts-list { /*лист для постов хаха л-логика*/
+   margin-top: 30px;
+    margin-bottom: 30px;
+    width: 70%;
+ }
+ .post { /*блок для одного раздела вида медитации*/
+    margin-bottom: 35px;
+ }
+ .post-content{ 
+   padding: 20px 5px;
+   border: 1px solid #d3c06b;
+   border-radius: 5px;
+   margin-bottom: 20px;
+ }
+ .post-content ul{ 
+   list-style: circle;
+   padding-left: 20px;
+ }
+ .post-content p {
+    line-height: 1.5;
+    padding-bottom: 1em;
+ }
+ .post-image {
+    margin-bottom: 30px;
+ }
+ .category {
+    margin-bottom: 15px;
+ }
+ .category a {
+    color: #F8B763;
+    text-transform: uppercase;
+ }
+ .post-title {
+    margin-bottom: 12px;
+    font-size: 26px;
+ }
+ /*футер для каждого блока*/
+ .post-footer {
+   border-top: 1px solid #d3c06b;
+   border-bottom: 1px solid #d3c06b;
+   position: relative;
+   margin-top: 15px;
+   margin-bottom: 10px;
+ }
+ .more-link {
+    position: relative;
+    display: inline-block;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: white;
+    line-height: 44px;
+    padding: 0 22px;
+    background: #3C3D41;
+    letter-spacing: 0.1em;
+    white-space: nowrap;
+ }
+ .more-link:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    right: 0;
+    border: solid transparent;
+    border-width: 22px 18px;
+    border-left-color: #3C3D41;
+    transform: translateX(100%);
+ }
+ .post-social {
+    position: absolute;
+    left: auto;
+    top: 50%;
+    right: 0;
+    text-align: right;
+    transform: translateY(-50%);
+    padding: 0;
+    font-size: 12px;
+ }
+ .post-social a {
+    display: inline-block;
+    margin-left: 8px;
+    color: #F8B763;
+    width: 25px;
+    height: 25px;
+    line-height: 23px;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid;
+ }
+
+
+ .video-tutorials{
+   background-color:#F8B763;
+   max-width: 50%;
+   height: auto;
+   padding: 10px;
+   border-radius: 15px;
+   margin-bottom: 30px;
+ }
+ .video-tutorials h2{ 
+   text-align: center;
+   text-transform: uppercase;
+   margin-top: 10px;
+   margin-bottom: 20px;
+}
+.video-tutorials p{
+   margin-top: 20px;
+   font-size: 16px;
+   font-family: 'Croissant One', cursive;
+   padding-bottom: 20px;
+}
+.video-tutorials a{ 
+   text-decoration: none;
+   color: #3C3D41;
+   font-size: 16px;
+}
+
+
+
+@media (max-width: 800px) {
+   .main-title{ 
+      height: auto;
+      margin-bottom: 20px;
+      max-width: 100%;
+   }
+ 
+   .main-title img{ 
+      margin-top: -30px;
+      width: 150px; 
+      height: 100px;
+   }
+   .main-title p{ 
+      font-size: 14px;
+   }
+   /* отменяем обтекание левой и правой колонок, устанавливаем им ширину 100%*/
+   .posts-list{
+      width: 100%;
+   }
+   .widget-point-title {
+      font-size: 1.5em;
+   }
+   .container{
+       display: block;
+   }
+   .dropdown{
+      display: none;
+   }
+   .video-tutorials{ 
+      max-width: 100%;
+   }
+}
+
+@media (max-width: 480px) {
+   .main-title{ 
+      font-size: smaller;
+      margin-top: 130px;
+   }
+   .content_of_page{
+      margin-top: -30px; 
+   }
+
+   .widget{ 
+      display: none;
+   }
+   .footer-container{ 
+      flex-wrap: wrap;
+   }
+}

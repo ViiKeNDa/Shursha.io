@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title> Пупа </title>
+        <link rel="stylesheet" href="base.css">
+        <link rel="stylesheet" href="header.css">
+        <link rel="stylesheet" href="Page_yoga.css">
+        <link rel="stylesheet" href="footer.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+        <link rel="icon" href="images/4.ico" sizes = "any">
+        <script src="https://kit.fontawesome.com/fd9c503804.js" crossorigin="anonymous"></script>
+    </head>
+
+    <header>
+        <nav class = "container"> 
+            <a class="logo" href="">
+                <span>L</span>
+                <span>U</span>
+                <span>N</span>
+                <span>A</span>
+            </a>
+
+            <div class="nav-toggle"><span></span></div> <!-- кнопка показа, скрытия менюшки -->
+
+            <ul id = "menu">             
+                <li><a href = "Page_main.html">Главная </a></li>
+                <li><a href = "link 2"> О йогах  </a></li>
+                <li><a href = "link 3"> Видео</a></li>
+            </ul>
+
+            <form action="" method="get" id="searchform">
+                <input type="text" placeholder="Искать на сайте...">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </nav>
+    </header>
+
+    <body>
+
+        <div class = "container" > 
+            <div class = "main-title"> 
+                <h1 > Буддийская медитация</h1>
+                <img src="images/title_img.png"> 
+                <p>Буддийские духовные практики направлены на развитие в себе сострадания, уравновешенности. Конечная цель – достижение нирваны, выход из круга перерождений.</p>
+                
+            </div>
+        </div>
+
+        <div class = "container">
+            <div class = "posts-list">
+                <aticle id = "post-1" class = "post"> 
+                    <div class = "post-image"><a href=""><img src= "images/Буддийская_фотка.jpeg"></a></div>
+                    <div class = "post-content"> 
+                        <h2 class="post-title">Дзен медитация (дзадзен)</h2>
+                        <p>В отличие от других медитаций, дзадзен не подразумевает стремления к развитию. Наоборот, считается, что в человеке уже заложено абсолютное знание. Нужно только прислушаться к себе. Все, что потребуется – максимальная неподвижность и концентрация.</p>
+                        <p>Дзен медитация не имеет определенной цели. Совершенство достигнуто. Поэтому не надо стремиться остановить мысленный поток, что-то представить или постигнуть. Можно просто отпустить свое сознание.</p>
+                    </div>
+                        
+                    <div class = "post-image"><a href=""><img src= "images/Буддийская_фотка_2.jpg"></a></div>
+                    <div class = "post-content">
+                        <h3> Как заняться дзадзен: </h3>
+                        <ul> 
+                            <li> <p> Найдите спокойное место. Займите удобную сидячую позу (на коленях, скрестив ноги или в позе лотоса). </p></li>
+                            <li> <p> Выпрямите спину. Для дзадзен обязательное условие.</p></li>
+                            <li> <p> Руки сложите в Дхьяна мудру: правая лежит на левой, ладони вверх, большие пальцы соединены.</p></li>
+                            <li> <p> Язык приподнимите и уприте в верхнее небо.</p></li>
+                            <li> <p> Взгляд направьте на пол перед собой.</p></li>
+                            <li> <p> Взгляд направьте на пол перед собой.</p></li>
+                        </ul>
+                    </div>
+                </aticle>
+            </div> <!-- конец div class="posts-list"-->
+
+        </div> <!-- конец div class="container"-->
+
+        <div class = "container"> 
+            <div class = "literature">
+                <a href = "#"> <h2> Рекомендуем ознакомиться с литературой </h2> </a>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="about">
+                    <h2>О сайте</h2>
+                    <p>ля-ля~</p>
+                </div>
+
+                <div class="author">
+                    <h2>О разработчике </h2>
+                    <p> Шурша Ира ИКБО-36-22 </p>
+                </div>
+            </div>
+        </footer>
+
+
+        <script>
+            $('.nav-toggle').on('click', function(){
+            $('#menu').toggleClass('active');
+            });
+        </script>
+    </body>
+</html>

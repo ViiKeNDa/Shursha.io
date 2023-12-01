@@ -1,0 +1,90 @@
+:root {
+    --transistion-delay: 0.5s;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+body {
+    height: 100vh;
+    font-family: "Inter", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+}
+
+.container {
+    width: 75%;
+    background-color: rgb(255, 255, 255);
+    border-style: groove;
+    border-color: rgba(241, 80, 241, 0.726);
+    padding: 20px;
+    color:#000000;
+}
+
+
+.wrapper {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.form .input-box {
+    position: relative;
+    padding: 20px;
+}
+
+.form .input-box input {
+    background: transparent;
+    padding: 5px 0;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    width: 100%;
+    border-bottom: 1px solid rgba(241, 80, 241, 0.726);
+    transition: var(--transistion-delay) linear;
+}
+
+.form .input-box input:focus,
+.form .input-box input:valid {
+    padding: 15px 10px;
+    background-color: rgba(255, 170, 255, 0.726);
+    margin-top: 10px;
+}
+
+.form .input-box input:focus ~ label,
+.form .input-box input:valid ~ label {
+    padding: 5px;
+}
+
+.form button, .admin {
+    transition: 0,3s;
+    padding: 15px 10px;
+    border-radius: 0;
+    background-color: rgba(241, 80, 241, 0.726);
+    border: 1px solid rgb(0, 0, 0);
+    margin-top: 30px;
+}
+
+.form button:hover, .admin:hover {
+    background-color: rgb(250, 189, 247);
+}
+
+.form .input-box label {
+    position: absolute;
+    font-size: 18px;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    transition: var(--transistion-delay) linear;
+}
+.secondCaptcha{
+    display: none;
+}
+.submit{ 
+    color: black;
+}

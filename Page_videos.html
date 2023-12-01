@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title> Пупа </title>
+        <link rel="stylesheet" href="base.css">
+        <link rel="stylesheet" href="footer.css">
+        <link rel="stylesheet" href="Page_videos.css">
+        <link rel="stylesheet" href="Page_yoga.css">
+        <link rel="stylesheet" href="header.css">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/> <!-- для иконок соцсетей -->
+
+        <link rel="icon" href="images/4.ico" sizes = "any">
+        <script src="https://kit.fontawesome.com/fd9c503804.js" crossorigin="anonymous"></script>
+    </head>
+
+    <header>
+        <nav class = "container"> 
+            <a class="logo" href="">
+                <span>L</span>
+                <span>U</span>
+                <span>N</span>
+                <span>A</span>
+            </a>
+
+            <div class="nav-toggle"><span></span></div> <!-- кнопка показа, скрытия менюшки -->
+
+            <ul id = "menu">             
+                <li><a href = "Page_main.html"> Главная </a></li>
+                <li><a href = "link 2"> Литература </a></li>
+                <li><a href = "link 3"> О йогах </a></li>
+            </ul>
+
+            <form action="" method="get" id="searchform">
+                <input type="text" placeholder="Искать на сайте...">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </nav>
+    </header>
+
+    <body>
+
+        <div class = "container" > 
+            <div class = "main-title"> 
+                <h1 > МЕДИТАЦИЯ - ЭТО КЛЕВО!</h1>
+            </div>
+        </div>
+
+        <div class = "container">
+
+            <div class="cards-of-videos">
+                <div class="card">
+                    <div class="card-content">
+                        <h2>Лот №1</h2>
+                        <a href = "https://www.youtube.com/live/5hKKcXFfOfQ?si=Q76wy9Y_ZpDvx-Ww" > <img src="images/nature1.jpg"> </a>
+                        <h3>Раслабляющая музыка для учебы</h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>Лот №2</h2>
+                        <a href ="https://youtu.be/hj1_a7umGNI?si=AFHLv3x55EzBZV0j"> <img src="images/nature2.jpg"></a>
+                        <h3>Йога на все тело</h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>Лот №3</h2>
+                        <a href ="https://youtu.be/DjyaHI-KeD4?si=MFoS79YfPM3bOBEh"><img src="images/nature3.jpg"></a>
+                        <h3>Йога для начинающих</h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>Лот №1</h2>
+                        <a href ="https://youtu.be/TzngSwk-gPA?si=6z-lu8sGirVIYxOv"><img src="images/nature4.jpg"></a>
+                        <h3>Введение в практику дзадзен</h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>Лот №2</h2>
+                        <a href ="https://www.youtube.com/watch?v=X0I0nf2eoK8"> <img src="images/nature5.jpg"></a>
+                        <h3>Китайская музыка для успокоения</h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>Лот №3</h2>
+                        <a href ="https://youtu.be/1rfjTrnknlo?si=kItvTXvhpfPKeuuP"> <img src="images/nature9.jpg"></a>
+                        <h3>Нараяная мантра для индийской медитации</h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>Лот №2</h2>
+                        <a href ="https://youtu.be/u3chszsNZnc?si=Hbdbzuci9e_YvcyZ"> <img src="images/nature10.jpg.crdownload"></a>
+                        <h3>Музыка для буддийской медитации</h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>Лот №3</h2>
+                        <a href ="https://youtu.be/TVqzma5xPME?si=V81IMYJRwb_s15yQ"> <img src="images/nature8.jpg"></a>
+                        <h3>Медитация перед сном</h3>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="about">
+                    <h2>О сайте</h2>
+                    <p>ля-ля~</p>
+                </div>
+
+                <div class="author">
+                    <h2>О разработчике </h2>
+                    <p> Шурша Ира ИКБО-36-22 </p>
+                </div>
+            </div>
+        </footer>
+
+
+        <script>
+            $('.nav-toggle').on('click', function(){
+            $('#menu').toggleClass('active');
+            });
+        </script>
+    </body>
+</html>

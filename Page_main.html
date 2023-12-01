@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title> Пупа </title>
+        <link rel="stylesheet" href="base.css">
+        <link rel="stylesheet" href="header.css">
+        <link rel="stylesheet" href="Page_main.css">
+        <link rel="stylesheet" href="aside.css">
+        <link rel="stylesheet" href="footer.css">
+        <link rel="stylesheet" href="cat-galery.css">
+        <link rel="stylesheet" href="search.js">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/> <!-- для иконок соцсетей -->
+
+        <link rel="icon" href="images/4.ico" sizes = "any">
+        <script src="https://kit.fontawesome.com/fd9c503804.js" crossorigin="anonymous"></script>
+    </head>
+
+    <header>
+        <nav class = "container"> 
+            <a class="logo" href="">
+                <span>L</span>
+                <span>U</span>
+                <span>N</span>
+                <span>A</span>
+            </a>
+
+            <div class="nav-toggle"><span></span></div> <!-- кнопка показа, скрытия менюшки -->
+
+            <ul id = "menu">             
+                <li><a href = "2_практика.html"> Литература </a></li>
+                <li><a href = "link 2"> О йогах </a></li>
+                <li><a href = "Page_videos.html"> Видео </a></li>
+            </ul>
+
+            <form action="" method="get" id="searchform">
+                <input type="text" class = "search" placeholder="Искать на сайте...">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </nav>
+    </header>
+
+    <body>
+
+        <div class = "container" > 
+            <div class = "main-title"> 
+                <h1 > 4 вида медитации для начинающих, какой выбрать?</h1>
+                <img src="images/title_img.png"> 
+                <p> Любая система духовного совершенствования человека предлагает всего один способ – клевая медитация. Ниже представлены статьи для ознакомления. </p>
+                
+            </div>
+        </div>
+
+        <div class = "container">
+            <div class="content_of_page">
+                <div class="title">
+                    <button class="btn" type="button">Содержание: [показать]</button>
+                </div>
+                <div class="content hidden">
+                    <ul class = "widget-point-list">
+                        <li><a href = "Registration.html">Йогическая</a> (ля-ля)</li>
+                        <li><a href = "8pr-email.html">Индийская</a> (ля-ля)</li>
+                        <li><a href = "8pr-setka.html">Китайская</a> (ля-ля)</li>
+                        <li><a href = "2_практика.html">Буддийская</a> (1)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script> 
+            const btn = document.querySelector(".btn");
+            const content = document.querySelector(".content");
+
+            btn.addEventListener("click", btnClick);
+
+            function btnClick() {
+            console.log(content.classList);
+
+            if (content.classList.contains("hidden")) {
+                btn.textContent = "Содержание: [скрыть]";
+            } else {
+                btn.textContent = "Содержание: [показать]";
+            }
+
+            content.classList.toggle("hidden");
+            }
+
+        </script>
+
+
+
+        <div class = "container">
+            <div class = "posts-list">
+                <aticle id = "post-1" class = "post"> 
+                    <div class = "post-image"><a href=""><img src= "images/йогическая_фотка.jpg"></a></div>
+                    <div class = "post-content"> 
+                        <div class="category"><a href="">Виды медитации</a></div>
+                        <h2 class="post-title">Йогическая</h2>
+                        <p> Все йогические медитации направлены на гармоничное сочетание физического тела, души и сознания. Учитывая большое разнообразие используемых тут техник, каждый человек легко сможет подобрать оптимальную для себя медитацию.</p>
+                        
+                        <div class="post-footer">
+                            <a class="more-link" href="Page_yoga.html">Продолжить чтение</a>
+                        </div>
+                    </div>
+                </aticle>
+
+                <aticle id = "post-2" class = "post"> 
+                    <div class = "post-image"><a href=""><img src= "images/Индийская_фотка.jpeg"></a></div>
+                    <div class = "post-content"> 
+                        <div class="category"><a href="">Виды медитации</a></div>
+                        <h2 class="post-title">Индийская</h2>
+                        <p>В Индии для медитации широко используются мантры. Их существует огромное количество – на все случаи жизни. Работать с ними тоже можно по-разному – их произносят вслух или про себя, поют, пишут, иногда используют четки.</p>                        
+                        <div class="post-footer">
+                            <a class="more-link" href="Page_india.html">Продолжить чтение</a>
+                        </div>
+                    </div>
+                </aticle>
+
+                <aticle id = "post-3" class = "post"> 
+                    <div class = "post-image"><a href=""><img src= "images/Китайская_фотка.jpg"></a></div>
+                    <div class = "post-content"> 
+                        <div class="category"><a href="">Виды медитации</a></div>
+                        <h2 class="post-title">Китайская</h2>
+                        <p>Китайские практики направлены на достижение гармонии тела и духа. В основном они работают с жизненной энергией (генерируют, трансформируют, перенаправляют ее). В их основе – китайская традиционная философия.</p>                        
+                        <div class="post-footer">
+                            <a class="more-link" href="Page_china.html">Продолжить чтение</a>
+                        </div>
+                    </div>
+                </aticle>
+
+                <aticle id = "post-4" class = "post"> 
+                    <div class = "post-image"><a href=""><img src= "images/Буддийская_фотка.jpeg"></a></div>
+                    <div class = "post-content"> 
+                        <div class="category"><a href="">Виды медитации</a></div>
+                        <h2 class="post-title">Буддийская</h2>
+                        <p> Буддийские духовные практики направлены на развитие в себе сострадания, уравновешенности. Конечная цель – достижение нирваны, выход из круга перерождений.</p>                        
+                        <div class="post-footer">
+                            <a class="more-link" href="Page_budda.html">Продолжить чтение</a>
+                        </div>
+                    </div>
+                </aticle>
+            </div> <!-- конец div class="posts-list"-->
+        </div> <!-- конец div class="container"-->
+
+        <div class = "container"> 
+            <div class = "video-tutorials"> 
+                <h2> Смотрите также: </h2>
+                <p> Полезные видео-гайды, советы и музыку для медитации </p> 
+                <a href = "Page_videos.html"> Перейти </a>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="about">
+                    <h2>О сайте</h2>
+                    <p>ля-ля~</p>
+                </div>
+
+                <div class="author">
+                    <h2>О разработчике </h2>
+                    <p> Шурша Ира ИКБО-36-22 </p>
+                </div>
+            </div>
+        </footer>
+
+
+        <script>
+            $('.nav-toggle').on('click', function(){
+            $('#menu').toggleClass('active');
+            });
+        </script>
+    </body>
+</html>

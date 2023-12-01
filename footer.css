@@ -1,0 +1,47 @@
+.footer {
+   background: rgb(255, 208, 138);
+}
+
+.footer .footer-container {
+   display: flex;
+   justify-content: center;
+   padding: 2rem;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 2.5rem;
+}
+
+.footer .footer-container h2 {
+   margin-bottom: 1rem;
+   font-size: 1.5rem;
+}
+
+.footer .footer-container h2::after {
+   content: '';
+   display: block;
+   margin-top: 0.4rem;
+   width: 30%;
+   /* height: 1%; */
+   border-bottom: 3px solid rgb(255, 225, 179);
+   border-radius: 1px;
+   transition: 0.2s ease-in-out;
+}
+
+.footer .footer-container .about:hover h2::after,
+.footer .footer-container .author:hover h2::after {
+   width: 50%;
+}
+
+@media (max-width: 480px) {
+   /* отменяем обтекание для столбцов футера страницы */
+   .footer-call {
+      float: none;
+      margin-bottom: 20px;
+      width: 100%;
+      text-align: center;
+   }
+   .footer-call:last-child {
+      text-align: center;
+      margin-bottom: 0;
+   }
+   
+}

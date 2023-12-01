@@ -1,0 +1,64 @@
+.cards-of-videos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 200px;
+    height: 350px;
+    background-color: #ef7342;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    transition: transform 0.3s ease, filter 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card .card-content {
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card img {
+    max-width: 150px;
+    border-radius: 8px;
+}
+
+.card h2 {
+    margin: 0;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px 10px #cf361f;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.5;
+    z-index: -1;
+    transition: opacity 0.3s ease;
+}
+
+.card:hover::before {
+    opacity: 1;
+    background: linear-gradient(45deg, #F8B763, transparent);
+
+}
+@media (max-width:525px) {  
+    .card{ 
+        width: 250px;
+        height: 400px;
+    }
+    .card img{ 
+        max-width: 200px; 
+    }
+    
+}

@@ -1,0 +1,112 @@
+@media (max-width: 800px) {
+   /* показываем кнопку для переключения верхней навигации */
+   .nav-toggle {
+      display: block;
+   }
+   header {
+     margin-top: -90px;
+       padding: 10px 0;
+   }
+   /* скрываем верхнее меню, отменяем обтекание, позиционируем его, сместив на высоту шапки сайта */
+   #menu {
+      max-height: 0;
+      background: white;
+      float: none;
+      position: absolute;
+      overflow: hidden;
+      top: 63px;
+      right: 0;
+      left: 0;
+      margin: 0 5%;
+      padding: 0;
+      z-index: 3;
+      border-radius: 5%;
+   }
+   /* делаем элементы списка блочными, чтобы они располагались друг под другом */
+   #menu li {
+      display: block;
+      text-align: center;
+      border-bottom: 1px solid #cecec9;
+      margin-right: 0;
+   }
+   .main-title{ 
+      height: auto;
+      margin-bottom: 20px;
+      max-width: 100%;
+   }
+ 
+   .main-title img{ 
+      margin-top: -30px;
+      width: 150px; 
+      height: 100px;
+   }
+   .main-title p{ 
+      font-size: 14px;
+   }
+   /* отменяем обтекание левой и правой колонок, устанавливаем им ширину 100%*/
+   .posts-list{
+      width: 100%;
+   }
+   .widget-point-title {
+      font-size: 1.5em;
+   }
+   .container{
+       display: block;
+   }
+   .dropdown{
+      display: none;
+   }
+   .video-tutorials{ 
+      max-width: 100%;
+   }
+}
+
+@media (max-width: 480px) {
+   header{ 
+      margin-top: -130px;
+   }
+   /* отменяем обтекание для логотипа и выравниваем по центру*/
+   .logo {
+      float: none;
+      margin: 0 auto 15px;
+      display: table;
+   }
+   .logo span {
+      margin: 0 2px;
+   }
+   /* позиционируем меню на увеличившуюся высоту шапки */
+   #menu {
+      top: 118px;
+   }
+   /* позиционируем форму поиска по левому краю */
+   #searchform {
+      float: left;
+      margin-left: 0;
+   }
+   .main-title{ 
+      font-size: smaller;
+      margin-top: 130px;
+   }
+   .content_of_page{
+      margin-top: -30px; 
+   }
+
+   .widget{ 
+      display: none;
+   }
+   .footer-container{ 
+      flex-wrap: wrap;
+   }
+   /* отменяем обтекание для столбцов футера страницы */
+   .footer-call {
+      float: none;
+      margin-bottom: 20px;
+      width: 100%;
+      text-align: center;
+   }
+   .footer-call:last-child {
+      text-align: center;
+      margin-bottom: 0;
+   }
+   
+}

@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title> Пупа </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/4.ico" sizes = "any">
+</head>
+    <body>
+<header>
+
+    <nav> 
+        <img src = "images/logo.png" height="70" width="200">
+
+        <menu>             
+            <li><a href = "link 1"> Занятия </a></li>
+            <li><a href = "link 2"> О студии </a></li>
+            <li><a href = "link 3"> Тарифы </a></li>
+            <li><a href = "link 4"> Контакты </a></li>
+        </menu>
+        <a href = # class = "shopcart"><img src = "images/basket.png"> </a>
+        <p id = "cartCounter">0</p>
+    </nav>
+
+
+</header>
+        
+<aside> 
+    <div class = "bok"> 
+        <h1> ВЫ </h1>
+        <p> Привлекательная </p>
+        <p> Милая </p>
+        <p> Неотразимая </p>
+        <p> Красавица </p>
+    </div>
+</aside> 
+
+<main>
+
+    <div class="pr7pr">
+        <div class="container-7pr">
+            <div class="box">
+                <span></span>
+                <div class="content-7pr">
+                    <h2>1</h2>
+                    <p>Первая карточка</p>
+                    <a href="#">Ссылка</a>
+                </div>
+            </div>
+            <div class="box">
+                <span></span>
+                <div class="content-7pr">
+                    <h2>2</h2>
+                    <p>Вторая карточка</p>
+                    <a href="#">Ссылка</a>
+                </div>
+            </div>
+            <div class="box">
+                <span></span>
+                <div class="content-7pr">
+                    <h2>3</h2>
+                    <p>Третья карточка</p>
+                    <a href="#">Ссылка</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="cards-wrapper">
+            <div class="card-container">
+                <div class="card-wrapper-1">
+                    <img src="images/power.jpg">
+                    <div class="card-content">
+                        <h3 class="card-title">Человек-бензопила</h3>
+                        <p class = "card-wrapper-text"> aaaaaaaaa </p>
+                        <div class = "card-buttons">
+                            <button class = "card-button addToCart">В корзину</button>
+                            <button class = "card-button">Купить</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-wrapper-2">
+                    <img src="images/luffi.png">
+                    <div class="card-content">
+                        <h3 class="card-title">Ванпис</h3>
+                        <p class = "card-wrapper-text"> aaaaaaaaaaaaaaaaaa </p>   
+                        <div class = "card-buttons">
+                            <button class = "card-button addToCart">В корзину</button>
+                            <button class = "card-button">Купить</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-wrapper-3">
+                    <img src="images/magistr.jpg">
+                    <div class="card-content">
+                        <h3 class="card-title">Магистр дьявольского культа </h3>
+                        <p class = "card-wrapper-text"> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa </p>   
+                        <div class = "card-buttons">
+                            <button class = "card-button addToCart">В корзину</button>
+                            <button class = "card-button">Купить</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script> 
+                function truncate(str, maxlength){
+                    if (str.length<=maxlength){
+                        return str;
+                    }
+                    else{
+                        return str.substr(0, maxlength)+"...";
+                    }
+                }
+                function truncateStrings(){
+                    const els = document.getElementsByClassName("card-wrapper-text");
+                    for(i = 0;i<els.length;i++){
+                        els.item(i).textContent = truncate(els.item(i).textContent, 20)
+                    }
+                }
+                truncateStrings();
+            </script>
+
+            <script>
+                function Accumulator(startingValue){
+                    this.value = startingValue;
+                    this.incrementValue = ()=>{
+                        this.value++;
+                        cartCounter.textContent = this.value;
+                    }
+                    this.read = ()=>{
+                        let numberOfBooks = prompt("Сколько карточек вы хотите купить?");
+                        this.value+=Number(numberOfBooks);
+                        cartCounter.textContent = this.value;
+                    }
+                }
+                let accumulator = new Accumulator(0);
+
+                const addToCartButtons = document.getElementsByClassName("addToCart");
+                for(var i = 0;i<addToCartButtons.length;i++){
+                    addToCartButtons.item(i).onclick = ()=>{
+                        accumulator.read();
+                    };
+                }
+            </script>
+
+        </div>
+
+        <div class="cards">
+            <div class="card3">
+                <div class="content-7pr">
+                    <h2>Лот №1</h2>
+                    <img src="images/nature1.jpg">
+                    <h3>Когда медитируешь - думай о котиках</h3>
+                </div>
+            </div>
+            <div class="card3">
+                <div class="content-7pr">
+                    <h2>Лот №2</h2>
+                    <img src="images/nature2.jpg">
+                    <h3>Когда медитируешь - думай о котиках</h3>
+                </div>
+            </div>
+            <div class="card3">
+                <div class="content-7pr">
+                    <h2>Лот №3</h2>
+                    <img src="images/nature3.jpg">
+                    <h3>Когда медитируешь - думай о котиках</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h1> Медитация - это клево!</h1> 
+    <h2> О йоге </h2>
+
+    <section>
+        <div class = "navaga">
+
+            <ol>  
+                <li> <a href = "https://ru.wikipedia.org/wiki/%D0%A5%D0%B0%D1%82%D1%85%D0%B0-%D0%B9%D0%BE%D0%B3%D0%B0"> <b> Медитация на природе </b> </a> </li>
+                <li> <a href = "https://yoga-academy.online/blog/chem-polezna-yoga-v-gamakah?ysclid=lmqos1y4ox903948950"><b> ЙОга в гамаках </b></a> </li>
+                <li> <a href = "https://lasalute.ru/blog/uprazhneniya/utrennyaya-praktika-i-asany-dlya-nachinayushchih/?ysclid=lmqosz6wdn225956382"> <b> Йога для беременных </b></a> </li>
+                <li> <a href = "https://www.huggies.ru/library/planirovanie/podgotovka-k-beremennosti/joga-dlya-beremennykh?ysclid=lmqotv3quy760563683"> <b> Утренняя йога </b></a> </li>
+            </ol>
+
+        </div>
+    </section>
+
+    <article>
+
+        <div class = "list"> 
+
+            <div class = "listik"> 
+                <img src = "images/природа.jpg" alt = "pupa" width="190" height="180">
+                <h3 id = "b"><strong> На природе </strong></h3>
+                <p>Описание этого блока, очевидно полезное но точно отображаюшее суть этого блока</p>
+            </div>
+            
+            <div class = "listik"> 
+                <img src = "images/гамаки.jpeg" alt = "ppupa" width="190" height="180" >
+                <h3 id = "c"><strong> Йога в гамаках </strong></h3>
+                <p>Описание этого блока, очевидно полезное но точно отображаюшее суть этого блока</p>
+            </div>
+        
+            <div class = "listik"> 
+                <img src = "images/животикк.jpeg" alt = "papa" width="190" height="180">
+                <h3 id = "d"><strong> Для беременных </strong></h3>
+                <p>Описание этого блока, очевидно полезное но точно отображаюшее суть этого блока</p>
+            </div>
+
+            <div class = "listik"> 
+                <img src = "images/утро.jpg" alt = "ppoppa" width="190" height="180">
+                <h3 id = "e"><strong> Утренняя медитация </strong></h3>
+                <p>Описание этого блока, очевидно полезное но точно отображаюшее суть этого блока</p>
+            </div>
+
+        </div>
+        
+    </article>
+
+
+    <section> 
+        <div class = "paimon"> 
+            <h2> ~Интересная статья~ </h2>
+            <img src = "images/paimon.png" width="320" height="320">
+            <div class = "statya">
+                <p> Вам, наверное, известно, что самой популярной медитацией является концентрация на дыхании. Есть также концентрация на чакрах, мыслях, объектах. Но существует и очень необычный вид медитации – сосредоточение на вкусе. К примеру, вы можете положить в рот изюминку и в течение пяти минут фокусироваться на ее вкусе. </p>
+                <p> Дэниел Сигел сам попробовал эту медитацию. Он пишет, что в процессе ее выполнения в его мозге произошли какие-то изменения. Когда позже он пошел на обед, его органы чувств – нос, уши, небо – начали делать самые настоящие открытия. Автор начал есть салат, и этот салат поглотил все его внимание. </p>
+                <p> Сигел вспоминает, что не мог ни участвовать в общем разговоре, ни произнести даже слова, чтобы объяснить людям из своей компании, с чем связаны странности в его поведении. Его сознание полностью погрузилось в запах, вкус и даже текстуру и звук салата, и с каждой новой порцией блюда эти переживания становились все сильнее и ярче. </p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class = "schedule">
+
+            <h3> Расписание </h3>
+
+            <ol> 
+                <li> <abbr title = "Клевая сладость"> Чак чак </abbr></li>
+                <li> <abbr title = "Станция метро"> Алма Аты</abbr></li>
+                <li><abbr title = "хз, честно"> Пипка</abbr></li>
+                <li><abbr title = "Пердимонокль"> ABOBA </abbr></li>
+                <li><abbr title = " Брандахлыст"> Прямоугольник </abbr></li>
+            </ol>
+
+        </div>
+    </section>
+
+    <div class = "video-container">
+        <div class = "video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Tlr7v3MVZmk?si=LqElT2Dn7Rz3saAI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+    
+    <button id="likeButton" class="like-button">
+        <span class="s">
+            <span class="sss">❤</span>
+            <span class="ss">78</span>
+        </span>
+        </button>
+        <script src="9_4pr.js"></script>
+    <script> 
+        //import java.javascript
+        document.addEventListener('DOMContentLoaded', function () {
+            var likeButton = document.getElementById('likeButton');
+            var isLiked = false;
+
+            likeButton.addEventListener('click', function () {
+                var ssElement = likeButton.querySelector('.ss');
+                if (isLiked) {
+                    likeButton.classList.remove('active');
+                    ssElement.textContent = "78";
+                } else {
+                    likeButton.classList.add('active');
+                    ssElement.textContent = "79";
+                }
+
+                isLiked = !isLiked;
+            });
+        });
+
+    </script>
+
+    <section>
+        <div class = "cards">
+            <div class="cart1-wrap">
+                <div class="cart1-item">
+                    <img src="images/cards1.jpg">
+                    <div class="cart1-buttons">
+                        <a href="" class="button">Подробнее</a>
+                    </div>
+                </div>
+                <div class="cart1-title">
+                    <a href="">Медитация - это жизнь</a>
+                </div>
+            </div>
+
+            <div class="cart1-wrap">
+                <div class="cart1-item">
+                    <img src="images/cards2.jpg">
+                    <div class="cart1-buttons">
+                        <a href="" class="button">Подробнее</a>
+                    </div>
+                </div>
+                <div class="cart1-title">
+                    <a href="">Медитация - это жизнь</a>
+                </div>
+            </div>
+        
+            <div class="cart1-wrap">
+                <div class="cart1-item">
+                    <img src="images/cards3.jpg">
+                    <div class="cart1-buttons">
+                        <a href="" class="button">Подробнее</a>
+                    </div>
+                </div>
+                <div class="cart1-title">
+                    <a href="">Медитация - это жизнь</a>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <article class="FORMA">
+        
+        <div class="centered-form">
+        <form action="" method="get" class="my-form">
+            <p>
+                <label for="name">Введите имя:</label>
+                <input type="text" name="name" id="name" required placeholder="Имя">
+            </p>
+
+            <p>
+                <label for="nick">Введите псевдоним:</label>
+                <input type="text" name="nick" id="nick" required placeholder="Пневма" pattern="[a-zA-Z]">
+            </p>
+
+            <p>
+                <label for="tel">Введите номер телефона:</label>
+                <input type="tel" name="tel" id="tel" required>
+            </p>
+
+            <p>
+                <label for="email">Введите почту:</label>
+                <input type="email" name="email" id="email" required>
+            </p>
+
+            <p>
+                <label for="password">Введите пароль:</label>
+                <input type="password" name="password" id="password" required>
+            </p>
+
+            <p>
+                <label for="file">Добавьте файл:</label>
+                <input type="file" name="file" id="file" required>
+            </p>
+
+            <p>
+                <label for="number">Сколько вам лет?</label>
+                <input type="number" name="number" id="number" required min="3" max="78">
+            </p>
+
+            <p>
+                <label for="city-select">Откуда ты?</label>
+                <select name="city" id="city-select"  required>
+                    <option value="">-- Выбери город --</option>
+                    <option value="a">Алма-Аты</option>
+                    <option value="b">Севатополь</option>
+                    <option value="c">Мытищи</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="bread">крутой сайт?</label>
+                <input type="checkbox" name="bread" id="bread" required>
+            </p>
+
+            <p>
+                <label for="food">Кто лучше?</label>
+                <select name="food" id="food"  required multiple size="2">
+                    <option disabled value="">-- Выбери перса --</option>
+                    <option value="a">Сяо</option>
+                    <option value="b">Нёвилетт</option>
+                    <option value="c">Ризли</option>
+                    <option value="c">Чжун Ли</option>
+                    <option value="c">Скарамучча</option>
+                </select>
+            </p>
+
+            <p>
+                <label>Кнопочкааа</label>
+                <input type="radio" name="Clicker" id="Clicker1" checked>
+                <input type="radio" name="Clicker" id="Clicker2" >
+            </p>
+
+            <p>
+                <label for="datetime-local">Дата и время</label>
+                <input type="datetime-local" name="datetime-local" id="datetime-local" required>
+            </p>
+
+            <p>
+                <label for="button">Тык тык</label>
+                <input type="button" name="button" id="button" required>
+            </p>
+
+            <p>
+                <label for="about">Тебе нравится магическая битва??</label>
+                <textarea  name="about" id="about" rows="7" cols="35" required placeholder="Твое мнение" maxlength="20" minlength="6"></textarea>
+            </p>
+
+            <p>
+            <label>Маленький вопросик^^</label>
+            <fieldset>
+                <legend>Что из этого любишь больше всего?</legend>
+                <label>
+                    <input type="radio" name="answer" value="четыре">
+                    Сыр косичку
+                </label>
+                <label>
+                    <input type="radio" name="answer" value="Шесть">
+                    Шоколад
+                </label>
+                <label>
+                    <input type="radio" name="answer" value="Семь">
+                    Мятное мороженое с шоколадной крошкой
+                </label>
+                <label>
+                    <input type="radio" name="answer" value="Пять">
+                    Сдобную булочку
+                </label>
+            </fieldset>
+            </p>
+
+            <p>
+                <input type="submit" name="submit" id="submit" required>
+            </p>
+
+        </form>
+        </div>
+        <br>
+
+    </article>
+
+        <footer> 
+            <div class="footer-social">
+                <p>Подписывайтесь на нас в социальных сетях:</p>
+                <a href="#" class="social-icon">
+                    <img src="images/facebook.png" alt="VK">
+                </a>
+                <a href="#" class="social-icon">
+                    <img src="images/vk.png" alt="TG">
+                </a>
+                <a href="#" class="social-icon">
+                    <img src="images/telegram.png" alt="Viber">
+                </a>
+            </div>
+        </footer>
+        </main>
+        
+        
+    </body>
+</html>
